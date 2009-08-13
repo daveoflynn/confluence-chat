@@ -16,8 +16,9 @@
         <styleClass>personal-space-link</styleClass>
     </web-item>
 
-    <rest>
-        
+    <!-- provides JSON endpoints for sending and receiving messages -->
+    <rest key="chat-rest-endpoint" name="Chat REST Endpoint" path="/chat" version="1">
+        <description>Allows JSON calls to send and receive chat messages</description>
     </rest>
 
     <macro name="confluence-chat" class="com.atlassian.fedex.ExampleMacro" key="my-macro">

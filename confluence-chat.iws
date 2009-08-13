@@ -89,7 +89,7 @@
       <file leaf-file-name="atlassian-plugin.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="8" selection-start="811" selection-end="811" vertical-scroll-proportion="0.46721312">
+            <state line="19" column="61" selection-start="925" selection-end="925" vertical-scroll-proportion="0.46721312">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="542" selection-end="542" vertical-scroll-proportion="-1.7586207">
+            <state line="15" column="32" selection-start="542" selection-end="542" vertical-scroll-proportion="6.9310346">
               <folding />
             </state>
           </provider>
@@ -485,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="542" selection-end="542" vertical-scroll-proportion="-1.7586207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/JabberChat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
@@ -499,9 +492,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="542" selection-end="542" vertical-scroll-proportion="6.9310346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="811" selection-end="811" vertical-scroll-proportion="0.46721312">
+        <state line="19" column="61" selection-start="925" selection-end="925" vertical-scroll-proportion="0.46721312">
           <folding />
         </state>
       </provider>
