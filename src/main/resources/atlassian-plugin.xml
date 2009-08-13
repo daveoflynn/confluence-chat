@@ -25,4 +25,13 @@
     <!-- TODO: Add macro description -->
     <!-- <description></description> -->
     </macro>
+
+    <!--Add our own little static resourcey goodness-->
+    <web-resource name="Confluence Chat Web Resources" key="confluence-chat">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="confluence-chat.css" location="confluence-chat.css"/>
+        <resource type="download" name="confluence-chat.js" location="confluence-chat.js"/>
+        <context>main</context>
+    </web-resource>
+
 </atlassian-plugin>
