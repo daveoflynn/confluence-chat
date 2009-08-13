@@ -8,21 +8,26 @@
         -->
     </plugin-info>
 
+    <!-- i18n strings -->
+    <resource type="i18n" name="i18n" location="i18n" />
+
     <!-- Add ourselves to the user hover as a secondary action -->
     <web-item key="im-chat" name="Chat" section="system.user.hover/secondary" weight="33">
-        <label key="space.personal.name"/>
-        <link>/display/~$generalUtil.doubleUrlEncode($helper.action.user.name)</link>
-        <condition class="com.atlassian.fedex.UserHasChatName"/>
+        <label key="chat.item.label"/>
+        <link linkId="chat-url">http://dummy-chat-link</link>  <!-- will get rewritten by the in-page JS to the correct jabber://username@server -->
+        <condition class="com.atlassian.fedex.chat.UserHasChatName"/>
         <styleClass>personal-space-link</styleClass>
     </web-item>
+
+    <!-- Spring components -->
+    <component key="messageController" class="com.atlassian.fedex.rest.controller.MessageController" autowire="byName" />
+    <component key="jabberChat" class="com.atlassian.fedex.chat.jabber.JabberChat" autowire="byName">
+        <interface>com.atlassian.fedex.chat.Chat</interface>
+    </component>
 
     <!-- provides JSON endpoints for sending and receiving messages -->
     <rest key="chat-rest-endpoint" name="Chat REST Endpoint" path="/chat" version="1">
         <description>Allows JSON calls to send and receive chat messages</description>
     </rest>
 
-    <macro name="confluence-chat" class="com.atlassian.fedex.ExampleMacro" key="my-macro">
-    <!-- TODO: Add macro description -->
-    <!-- <description></description> -->
-    </macro>
 </atlassian-plugin>
