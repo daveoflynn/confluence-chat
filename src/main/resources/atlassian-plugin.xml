@@ -1,0 +1,27 @@
+<atlassian-plugin key="${groupId}.${artifactId}" name="${artifactId}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <!-- TODO: Add vendor details -->
+        <!--
+        <vendor name="Example Company" url="http://www.example.com"/>
+        -->
+    </plugin-info>
+
+    <!-- Add ourselves to the user hover as a secondary action -->
+    <web-item key="im-chat" name="Chat" section="system.user.hover/secondary" weight="33">
+        <label key="space.personal.name"/>
+        <link>/display/~$generalUtil.doubleUrlEncode($helper.action.user.name)</link>
+        <condition class="com.atlassian.fedex.UserHasChatName"/>
+        <styleClass>personal-space-link</styleClass>
+    </web-item>
+
+    <rest>
+        
+    </rest>
+
+    <macro name="confluence-chat" class="com.atlassian.fedex.ExampleMacro" key="my-macro">
+    <!-- TODO: Add macro description -->
+    <!-- <description></description> -->
+    </macro>
+</atlassian-plugin>
