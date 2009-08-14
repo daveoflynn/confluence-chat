@@ -2289,6 +2289,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/jivesoftware/smackx/3.0.4/smackx-3.0.4-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.atlassian.sal:sal-api:2.0.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/sal/sal-api/2.0.9/sal-api-2.0.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/sal/sal-api/2.0.9/sal-api-2.0.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/sal/sal-api/2.0.9/sal-api-2.0.9-sources.jar!/" />
+      </SOURCES>
+    </library>
   </component>
   <UsedPathMacros>
     <macro name="MAVEN_REPOSITORY" />

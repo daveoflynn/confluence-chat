@@ -19,11 +19,15 @@
         <styleClass>personal-space-link</styleClass>
     </web-item>
 
-    <!-- Spring components -->
+    <!-- Spring components for internal use -->
     <component key="messageController" class="com.atlassian.fedex.rest.controller.MessageController" autowire="byName" />
     <component key="jabberChat" class="com.atlassian.fedex.chat.jabber.JabberChat" autowire="byName">
         <interface>com.atlassian.fedex.chat.Chat</interface>
     </component>
+    <component key="settingsPersister" class="com.atlassian.fedex.ui.SettingsPersister" autowire="byName" />
+
+    <!-- SAL for persisting server settings -->
+    <component-import key="pluginSettingsFactory" interface="com.atlassian.sal.api.pluginsettings.PluginSettingsFactory" />
 
     <!-- provides JSON endpoints for sending and receiving messages -->
     <rest key="chat-rest-endpoint" name="Chat REST Endpoint" path="/chat" version="1">

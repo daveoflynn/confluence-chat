@@ -181,6 +181,7 @@
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-asl:0.9.4" level="project" />
     <orderEntry type="library" name="Maven: com.atlassian.plugins.rest:atlassian-rest-common:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.sal:sal-api:2.0.9" level="project" />
   </component>
 </module>
 
