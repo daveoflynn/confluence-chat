@@ -1,5 +1,5 @@
 AJS.toInit(function($) {
-
+  
   // Wax on, wax off
   AJS.$(".confluence-userlink").hover(
     function () {
@@ -12,7 +12,7 @@ AJS.toInit(function($) {
       }, 500); 
     }, 
     function () {
-      setTimeout(clearStatus, 1000); // totally limited hack for presentation
+      // necessary?
     }
   );
   
@@ -25,25 +25,36 @@ AJS.toInit(function($) {
       var chatURL = location.protocol + "//" + location.host + "/confluence/rest/chat/1/" + username,
           getPresenceURL = chatURL + ".json",
           getChatURL = chatURL + "/chat.json";
-      
+
       $.getJSON(getPresenceURL, function(presence){
         $.getJSON(getChatURL, function(data){
+            request = false;
             buildLink(data.url, $profile, presence.online);
         });          
       });
+      
+      // another attempt at fixing hovers
+      $profile.mouseout(function(){
+        if (AJS.$(this).parents($profile).length === 0){
+          setTimeout(clearStatus, 500);
+        }
+      });
+      
     }
   };
 
   var buildLink = function(url, $profile, online){
-    var $chatLink = AJS.$("<a class=\"plugin-chat-link\"></a>")
-                      .attr("href", url)
-                      .text("Chat");
-        $chatLink.prepend("<span>&nbsp;</span>");
+    if (AJS.$(".plugin-chat-link").length === 0){
+      var $chatLink = AJS.$("<a class=\"plugin-chat-link\"></a>")
+                        .attr("href", url)
+                        .text("Chat");
+          $chatLink.prepend("<span>&nbsp;</span>");
 
-    if (online == true) {
-      $chatLink.addClass("online");
+      if (online == true) {
+        $chatLink.addClass("online");
+      }
+      AJS.$(".values", $profile).append($chatLink);
     }
-    AJS.$(".values", $profile).append($chatLink);
   }
 
   // Clears all changes
