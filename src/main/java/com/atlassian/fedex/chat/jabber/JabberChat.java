@@ -1,6 +1,7 @@
 package com.atlassian.fedex.chat.jabber;
 
 import com.atlassian.fedex.chat.Chat;
+import com.atlassian.fedex.ui.SettingsPersister;
 
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
@@ -14,6 +15,8 @@ import java.net.MalformedURLException;
 public class JabberChat implements Chat
 {
     XMPPConnection conn;
+
+    SettingsPersister settingsPersister;
 
 
     public JabberChat()
@@ -55,17 +58,20 @@ System.out.println("got presence: " + presence);
 
     protected String getLogonUsername()
     {
-        return "xxx";
+        return null;
+//        return settingsPersister.get("username");
     }
 
     protected String getLogonPassword()
     {
-        return "yyy";
+        return null;
+//        return settingsPersister.get("password");
     }
 
     protected String getServer()
     {
-        return "chat.atlassian.com";
+        return null;
+//        return settingsPersister.get("server");
     }
 
 
@@ -76,6 +82,13 @@ System.out.println("got presence: " + presence);
     {
         if (conn == null || !conn.isConnected())
         {
+            if (settingsPersister == null || getServer() == null)
+            {
+                System.out.println("not connecting as no params set.");
+                conn = null;
+                return null;
+            }
+
             try
             {
     System.out.println("creating object");
@@ -100,5 +113,10 @@ System.out.println("got presence: " + presence);
             }
         }
         return conn;
+    }
+
+    public void setSettingsPersister(SettingsPersister settingsPersister)
+    {
+        this.settingsPersister = settingsPersister;
     }
 }
