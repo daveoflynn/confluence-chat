@@ -59,32 +59,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JabberChat.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/chat/jabber/JabberChat.java">
+      <file leaf-file-name="Configure.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/ui/Configure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="19" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.6567164">
+            <state line="66" column="51" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="atlassian-plugin.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="27" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatUrl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/model/ChatUrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1250216681000" expanded="true" signature="324:560" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="595:847" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="885:917" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="968:1009" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="1047:1079" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="1130:1171" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="1207:1237" placeholder="{...}" />
+                <marker date="1250216681000" expanded="true" signature="1284:1321" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -93,17 +80,19 @@
       <file leaf-file-name="configure.vm" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/template/configure.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+            <state line="15" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configure.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/ui/Configure.java">
+      <file leaf-file-name="JabberChat.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/chat/jabber/JabberChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="13" column="13" selection-start="392" selection-end="392" vertical-scroll-proportion="-0.89361703">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,34 +100,16 @@
       <file leaf-file-name="i18n.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/i18n.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="81" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+            <state line="3" column="80" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestUserChat.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/RestUserChat.java">
+      <file leaf-file-name="SettingsPersister.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/ui/SettingsPersister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="52" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Presence.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/model/Presence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/controller/MessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+            <state line="20" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,7 +118,16 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="33" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0">
+            <state line="57" column="31" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atlassian-plugin.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="86" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -466,11 +446,45 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="rest" />
+          <option name="myItemId" value="chat" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="confluence-chat" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="confluence-chat" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="confluence-chat" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="model" />
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="fedex" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="chat" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jabber" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -656,11 +670,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6615385" order="0" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6628205" order="0" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820514" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
@@ -705,13 +719,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/jivesoftware/smack/3.0.4/smack-3.0.4.jar!/org/jivesoftware/smack/RosterEntry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="59" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../src/jdk-1_5_0-src-scsl/j2se/src/share/classes/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -749,48 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="81" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/template/configure.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/ui/Configure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="27" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/model/Presence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/model/ChatUrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="29" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
@@ -807,6 +772,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/model/Presence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/rest/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="24" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
@@ -814,9 +786,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="31" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="86" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/ui/SettingsPersister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/ui/Configure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="51" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1250216681000" expanded="true" signature="324:560" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="595:847" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="885:917" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="968:1009" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="1047:1079" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="1130:1171" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="1207:1237" placeholder="{...}" />
+            <marker date="1250216681000" expanded="true" signature="1284:1321" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="80" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/template/configure.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atlassian/fedex/chat/jabber/JabberChat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="19" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.6567164">
+        <state line="13" column="13" selection-start="392" selection-end="392" vertical-scroll-proportion="-0.89361703">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
