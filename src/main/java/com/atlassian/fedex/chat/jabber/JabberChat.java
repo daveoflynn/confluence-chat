@@ -4,6 +4,8 @@ import com.atlassian.fedex.chat.Chat;
 
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.RosterEntry;
+import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.packet.Presence;
 
 import java.net.URL;
@@ -11,13 +13,23 @@ import java.net.MalformedURLException;
 
 public class JabberChat implements Chat
 {
-//    XMPPConnection
+    XMPPConnection conn;
 
 
     public JabberChat()
     {
-
+System.out.println("creating new JabberChat!");        
+        // instantiate connection, as presence info is asynchronous.
+        getConnection();
     }
+
+//    public void finalize()
+//    {
+//        if (conn != null)
+//        {
+//            conn.disconnect();
+//        }
+//    }
 
     public boolean isOnline(String username)
     {
@@ -28,8 +40,10 @@ System.out.println("got connection");
         {
 System.out.println("fetching presence");
             Presence presence = conn.getRoster().getPresence(username + "@" + getServer());
-System.out.println("got presence: " + presence.isAvailable());
-            return presence.isAvailable();
+System.out.println("got presence: " + presence);
+
+            boolean isAvailable = presence.isAvailable();
+            return isAvailable;
         }
         return false;
     }
@@ -41,12 +55,12 @@ System.out.println("got presence: " + presence.isAvailable());
 
     protected String getLogonUsername()
     {
-        return "coop coop coop";
+        return "your_username";
     }
 
     protected String getLogonPassword()
     {
-        return "beep-beep-beep";
+        return "your_password";
     }
 
     protected String getServer()
@@ -60,23 +74,31 @@ System.out.println("got presence: " + presence.isAvailable());
      */
     protected XMPPConnection getConnection()
     {
-        try
+        if (conn == null || !conn.isConnected())
         {
-System.out.println("creating object");
+            try
+            {
+    System.out.println("creating object");
+//                XMPPConnection.DEBUG_ENABLED = true;
+                ConnectionConfiguration config = new ConnectionConfiguration(getServer());
 
-            XMPPConnection conn = new XMPPConnection(getServer());
-System.out.println("connecting");
-            conn.connect();
-System.out.println("logging in");
-            conn.login(getLogonUsername(), getLogonPassword());
-System.out.println("logged in");            
+                conn = new XMPPConnection(config);
+    System.out.println("connecting");
+                conn.connect();
+    System.out.println("logging in");
+                conn.login(getLogonUsername(), getLogonPassword());
+    System.out.println("logged in");
+    System.out.println(conn);
 
-            return conn;
+
+                return conn;
+            }
+            catch (XMPPException e)
+            {
+                e.printStackTrace();
+                conn = null;
+            }
         }
-        catch (XMPPException e)
-        {
-            e.printStackTrace();
-        }
-        return null;
+        return conn;
     }
 }

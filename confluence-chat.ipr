@@ -2278,6 +2278,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/atlassian/plugins/rest/atlassian-rest-common/1.0.2/atlassian-rest-common-1.0.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: jivesoftware:smackx:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jivesoftware/smackx/3.0.4/smackx-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jivesoftware/smackx/3.0.4/smackx-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jivesoftware/smackx/3.0.4/smackx-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
   </component>
   <UsedPathMacros>
     <macro name="MAVEN_REPOSITORY" />

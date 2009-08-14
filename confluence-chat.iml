@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module relativePaths="true" MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset1" name="My Fileset" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/spring-components.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -161,6 +170,7 @@
     <orderEntry type="library" name="Maven: rhino:js:1.6R5" level="project" />
     <orderEntry type="library" name="Maven: nekohtml:nekohtml:0.9.5" level="project" />
     <orderEntry type="library" exported="" name="Maven: jivesoftware:smack:3.0.4" level="project" />
+    <orderEntry type="library" exported="" name="Maven: jivesoftware:smackx:3.0.4" level="project" />
     <orderEntry type="library" name="Maven: com.atlassian.plugins.rest:atlassian-rest-module:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: javax.ws.rs:jsr311-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.0.3" level="project" />

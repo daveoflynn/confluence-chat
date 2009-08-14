@@ -16,6 +16,6 @@ public class Presence
 
     public Presence(boolean online)
     {
-        online = new Boolean(online);
+        this.online = new Boolean(online);
     }
 }
