@@ -55,12 +55,12 @@ System.out.println("got presence: " + presence);
 
     protected String getLogonUsername()
     {
-        return "your_username";
+        return "xxx";
     }
 
     protected String getLogonPassword()
     {
-        return "your_password";
+        return "yyy";
     }
 
     protected String getServer()

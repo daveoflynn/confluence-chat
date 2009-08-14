@@ -30,6 +30,21 @@
         <description>Allows JSON calls to send and receive chat messages</description>
     </rest>
 
+    <!-- Configure via the admin interface -->
+    <web-item key="configuration" name="Configuration" section="system.admin/administration" weight="10">
+        <label key="chat.config.label"/>
+        <link linkId="chatConfigLink">/plugins/chat/configure.action</link>
+    </web-item>
+
+    <xwork name="chat.xwork" key="chatconfig.action">
+        <package name="chat-config" extends="default" namespace="/plugins/chat">
+            <default-interceptor-ref name="defaultStack" />
+            <action name="configure" class="com.atlassian.fedex.ui.Configure" method="doDefault">
+                 <result name="success" type="velocity">/template/configure.vm</result>
+            </action>
+        </package>
+    </xwork>
+
     <!--Add our own little static resourcey goodness-->
     <web-resource name="Confluence Chat Web Resources" key="confluence-chat">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
