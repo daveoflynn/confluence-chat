@@ -56,4 +56,5 @@
         <resource type="download" name="confluence-chat.js" location="confluence-chat.js"/>
         <context>main</context>
     </web-resource>
+    <resource type="download" name="images/" location="images/"/>
 </atlassian-plugin>

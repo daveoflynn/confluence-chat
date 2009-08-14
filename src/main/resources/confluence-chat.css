@@ -1,2 +1,13 @@
-.confluence-chat-plugin .plugin-chat-link {display: block;}
-.confluence-chat-plugin .online {background: gold;}
+.confluence-chat-plugin .plugin-chat-link {display: block; padding: 0.2em 0 0 0; text-decoration: none;}
+  .confluence-chat-plugin .plugin-chat-link span {
+    background: url(images/presence.gif) no-repeat 0 -12px; 
+    display: block;
+    float: left; 
+    height: 12px;
+    margin: 0.2em 0.3em 0 0; 
+    width: 13px;
+  }
+  .confluence-chat-plugin .online span {
+    background-position: 0 0; 
+  }
+  

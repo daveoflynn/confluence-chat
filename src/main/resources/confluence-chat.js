@@ -44,10 +44,10 @@ AJS.toInit(function($) {
 
   var buildLink = function(url, $profile, online){
     console.log(online);
-    var linkText = "Chat with " + AJS.$("a.fn", $profile).text(),
-        $chatLink = AJS.$("<a class=\"plugin-chat-link\"></a>")
+    var $chatLink = AJS.$("<a class=\"plugin-chat-link\"></a>")
                       .attr("href", url)
-                      .append(linkText);
+                      .text("Chat");
+        $chatLink.prepend("<span>&nbsp;</span>");
         if (online == true) {
           $chatLink.addClass("online");
         }
