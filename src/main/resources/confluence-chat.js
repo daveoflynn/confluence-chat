@@ -24,7 +24,16 @@ AJS.toInit(function($) {
       $profile.toggleClass("confluence-chat-plugin"); // Provide scope for CSS
       
       var linkText = "Chat with " + AJS.$("a.fn", $profile).text(),
-          linkHref =  "rest/chat/1/ahempel/chat"; // query this
+          getChatURL = location.protocol + "//" + location.host + "/confluence/rest/chat/1/doflynn/chat.json";
+          console.log(getChatURL);
+          
+          var linkHref = "test";
+          $.getJSON(getChatURL,
+            function(data){
+              alert(data);
+          });
+          console.log(linkHref);
+          
     
       var $chatLink = AJS.$("<a class=\"plugin-chat-link\"></a>").attr("href", linkHref).append(linkText);
       
