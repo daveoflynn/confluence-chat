@@ -58,19 +58,19 @@ System.out.println("got presence: " + presence);
 
     protected String getLogonUsername()
     {
-        return null;
+        return "a";
 //        return settingsPersister.get("username");
     }
 
     protected String getLogonPassword()
     {
-        return null;
+        return "b";
 //        return settingsPersister.get("password");
     }
 
     protected String getServer()
     {
-        return null;
+        return "c";
 //        return settingsPersister.get("server");
     }
 
