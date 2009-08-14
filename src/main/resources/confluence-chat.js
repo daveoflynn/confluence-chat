@@ -8,7 +8,13 @@ AJS.toInit(function($) {
   // Wax on, wax off
   AJS.$(".confluence-userlink").hover(
     function () {
-      setTimeout(checkStatus, 1000); 
+      var matched = /username:([^ ]*).+userlink-(\d*)/.exec($(this).attr("class")),
+          username = matched[1],
+          userIndex = matched[2];
+      
+      setTimeout(function () {
+        checkStatus(username, userIndex);
+      }, 1000); 
     }, 
     function () {
       // necessary?
@@ -16,15 +22,15 @@ AJS.toInit(function($) {
   );
   
   // Checks and displays chat status
-  var checkStatus = function(){
-    
-    // TODO: only target THIS user's .ajs-content-hover
-    var $profile = AJS.$(".ajs-content-hover");
+  var checkStatus = function(username, userIndex){
+    var $profile = AJS.$("#content-hover-" + userIndex); // Target user-specific content-hover
     if ($profile) {
       $profile.toggleClass("confluence-chat-plugin"); // Provide scope for CSS
       
+      
+      
       var linkText = "Chat with " + AJS.$("a.fn", $profile).text(),
-          getChatURL = location.protocol + "//" + location.host + "/confluence/rest/chat/1/doflynn/chat.json";
+          getChatURL = location.protocol + "//" + location.host + "/confluence/rest/chat/1/" + username + "/chat.json";
           console.log(getChatURL);
           
           var linkHref = "test";
